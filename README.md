@@ -79,9 +79,8 @@ No activity tracked
 ## **✍(◔◡◔) Blogs posts**
 
 <!-- BLOG-POST-LIST:START -->
-
-```text
-Post not found (ㆆ_ㆆ)
-```
-
+- [platform9 - Быстрая среда для создания веб-проектов](https://maxqwars.github.io/overview/2022/03/19/platform-nine-overview.html)
+- [Разработка Pathogen и Metaform заморожена на неопределенный срок](https://maxqwars.github.io/announce/2022/03/01/pahogen-and-metafo-is-frost.html)
+- [Pathogen - Открытый клиент для Анилибрии](https://maxqwars.github.io/overview/2022/02/26/pathogen-overview.html)
+- [Metaform](https://maxqwars.github.io/solution/2022/02/24/metaform-announce.html)
 <!-- BLOG-POST-LIST:END -->
