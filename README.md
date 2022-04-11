@@ -84,8 +84,5 @@ Other        0 secs          ░░░░░░░░░░░░░░░░░
 ## **✍(◔◡◔) Blogs posts**
 
 <!-- BLOG-POST-LIST:START -->
-- [The user is permanently deleted](https://maxqwars.github.io/announce/2022/04/06/death-no-more.html)
-- [platform9 - Быстрая среда для создания веб-проектов](https://maxqwars.github.io/overview/2022/03/19/platform-nine-overview.html)
-- [Разработка Pathogen и Metaform заморожена на неопределенный срок](https://maxqwars.github.io/announce/2022/03/01/pahogen-and-metafo-is-frost.html)
 - [Pathogen - Открытый клиент для Анилибрии](https://maxqwars.github.io/overview/2022/02/26/pathogen-overview.html)
 <!-- BLOG-POST-LIST:END -->
