@@ -56,12 +56,7 @@
 <!--START_SECTION:waka-->
 
 ```text
-HTML         1 hr 12 mins    ██████████████░░░░░░░░░░░   55.37 %
-Markdown     25 mins         █████░░░░░░░░░░░░░░░░░░░░   19.64 %
-YAML         14 mins         ██▓░░░░░░░░░░░░░░░░░░░░░░   10.98 %
-Go           7 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.96 %
-TypeScript   7 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.68 %
-SCSS         2 mins          ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.11 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
