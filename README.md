@@ -79,5 +79,6 @@ No activity tracked
 ## **✍(◔◡◔) Blogs posts**
 
 <!-- BLOG-POST-LIST:START -->
+- [Pathogen - Открытый клиент для Анилибрии](https://maxqwars.github.io/overview/2022/05/10/debug.html)
 - [Pathogen - Открытый клиент для Анилибрии](https://maxqwars.github.io/overview/2022/02/26/pathogen-overview.html)
 <!-- BLOG-POST-LIST:END -->
