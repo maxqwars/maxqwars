@@ -1,8 +1,10 @@
 # About me
 
-Hi all, my name is Maxim Maksimenko, I am a JavaScript developer. 
+Hi all, my name is Maxim Maximenko, I am a JavaScript developer. 
 I develop web and server projects, write and maintain my own open-source projects.
 I use Linux and other open source software in my work.
+
+![wakatime](https://wakatime.com/badge/user/90d372c2-7281-4016-a6be-0412c6a69074.svg)
 
 ## Media Resources
 
