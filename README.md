@@ -10,19 +10,19 @@ I use Linux and other open source software in my work.
 
 List of my media resources, site for full articles, mastodon for short news summaries
 
-[![Mastodon microblog](https://github.com/maxqwars/maxqwars/blob/main/icons/png/mastodon-icon.png?raw=true)]()
-[![Jekyll powered blog](https://github.com/maxqwars/maxqwars/blob/main/icons/png/blog-icon.png?raw=true)](https://maxqwars.github.io/)
+[![Mastodon microblog](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/mastodon-icon.svg?raw=true)]()
+[![Jekyll powered blog](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/blog-icon.svg?raw=true)](https://maxqwars.github.io/)
 
 ## Contact info
 
 Contact information for suggestions and questions.
 
-[![Email](https://github.com/maxqwars/maxqwars/blob/main/icons/png/email-icon.png?raw=true)](mailto:maxqwars@gmail.com)
-[![Telegram](https://github.com/maxqwars/maxqwars/blob/main/icons/png/telegram-icon.png?raw=true)](https://t.me/maxqwars)
-[![VK](https://github.com/maxqwars/maxqwars/blob/main/icons/png/vk-icon.png?raw=true)](https://vk.com/maxqwars)
+[![Email](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/email-icon.svg?raw=true)](mailto:maxqwars@gmail.com)
+[![Telegram](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/telegram-icon.svg?raw=true)](https://t.me/maxqwars)
+[![VK](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/vk-icon.svg?raw=true)](https://vk.com/maxqwars)
 
 ## Support
 
 If you found the projects I created useful, you can financially support the author.
 
-[![Boosty.io](https://github.com/maxqwars/maxqwars/blob/main/icons/png/boosty-icon.png?raw=true)]()
+[![Boosty.io](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/boosty-icon.svg?raw=true)]()
