@@ -1,3 +1,5 @@
+![wakatime](./banner.png)
+
 # About me
 
 Hi all, my name is Maxim Maximenko, I am a JavaScript developer. 
