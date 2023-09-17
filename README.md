@@ -31,7 +31,7 @@ List of my media resources, site for full articles, mastodon for short news summ
 
 Contact information for suggestions and questions.
 
-[QR](https://raw.githubusercontent.com/maxqwars/maxqwars/main/maxqwars.svg)
+![QR](https://raw.githubusercontent.com/maxqwars/maxqwars/main/maxqwars.svg)
 
 ## Support
 
