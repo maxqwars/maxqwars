@@ -31,9 +31,7 @@ List of my media resources, site for full articles, mastodon for short news summ
 
 Contact information for suggestions and questions.
 
-[![Email](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/email-icon.svg?raw=true)](mailto:maxqwars@gmail.com)
-[![Telegram](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/telegram-icon.svg?raw=true)](https://t.me/maxqwars)
-[![VK](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/vk-icon.svg?raw=true)](https://vk.com/maxqwars)
+[QR](https://raw.githubusercontent.com/maxqwars/maxqwars/main/maxqwars.svg)
 
 ## Support
 
