@@ -25,16 +25,16 @@ I use Linux and other open source software in my work.
 
 List of my media resources, site for full articles, mastodon for short news summaries
 
-[![Jekyll powered blog](https://skillicons.dev/icons?i=markdown)](https://skillicons.dev)
+[![Personal blog](https://skillicons.dev/icons?i=markdown)](https://maxqwars.xyz)
 
-## Contact info
+<!-- ## Contact info
 
 Contact information for suggestions and questions.
 
-![QR](https://raw.githubusercontent.com/maxqwars/maxqwars/main/maxqwars.svg)
+![QR](https://raw.githubusercontent.com/maxqwars/maxqwars/main/maxqwars.svg) -->
 
-## Support
+<!-- ## Support
 
 If you found the projects I created useful, you can financially support the author.
 
-[![Boosty.io](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/boosty-icon.svg?raw=true)]()
+[![Boosty.io](https://github.com/maxqwars/maxqwars/blob/main/icons/svg/boosty-icon.svg?raw=true)]() -->
