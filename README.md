@@ -1,4 +1,4 @@
-![wakatime](./banner.png)
+![wakatime](./banner2.png)
 
 # About me
 
