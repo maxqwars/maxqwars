@@ -13,7 +13,7 @@ export default defineConfig({
   publicDir: '../public',
   build: {
     cssTarget: 'chrome80', // Set css target to modern browsers
-    // cssMinify: 'lightningcss', CSS minification broke glass effect
+    cssMinify: false, // CSS minification broke glass effect
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
