@@ -110,7 +110,9 @@ export class GithubRepos {
         this.#cacheKey(),
         JSON.stringify({ ts: Date.now(), data })
       );
-    } catch {}
+    } catch (e) {
+      console.error(e.message);
+    }
 
     return data;
   }
