@@ -8,7 +8,7 @@ const landingData = JSON.parse(
 );
 
 export default defineConfig({
-  base: '/maxqwars',
+  base: '/',
   root: 'src',
   publicDir: '../public',
   build: {
