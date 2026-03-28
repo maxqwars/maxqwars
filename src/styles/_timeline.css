@@ -1,0 +1,225 @@
+.timeline-section {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.timeline-header {
+  flex-shrink: 0;
+  padding: 0 60px;
+  margin-bottom: 48px;
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: inherit;
+}
+
+.timeline-header h2 {
+  font-family: var(--font-primary);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  /* letter-spacing: -0.5px; */
+  color: var(--color-text);
+}
+
+.timeline-header p {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.timeline-track-wrap {
+  flex-shrink: 0;
+  width: 100%;
+  min-width: 0;
+}
+
+.tl-line {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.2) 5%,
+    rgba(255, 255, 255, 0.2) 95%,
+    transparent
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.timeline-track {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 60px 40px;
+  overflow-x: auto;
+  overflow-y: visible;
+  cursor: grab;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.timeline-track::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline-track.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+  user-select: none;
+}
+
+.tl-item {
+  position: relative;
+  flex: 0 0 320px;
+  padding-top: 56px;
+  padding-right: 24px;
+  z-index: 1;
+}
+
+.tl-dot {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  z-index: 2;
+}
+
+.tl-item:hover .tl-dot {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 14px var(--color-accent);
+}
+
+.tl-date {
+  position: absolute;
+  top: 0;
+  left: 24px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-accent);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tl-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+  will-change: transform;
+}
+
+.tl-item:hover .tl-card {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-4px);
+}
+
+.tl-company {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.tl-role {
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 16px;
+}
+
+.tl-divider {
+  width: 32px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.18);
+  margin-bottom: 14px;
+}
+
+.tl-desc {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.timeline-hint {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 60px 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 70%);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  pointer-events: none;
+  user-select: none;
+}
+
+.timeline-hint svg {
+  animation: hint-nudge 2s ease-in-out infinite;
+}
+
+@keyframes hint-nudge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-header {
+    padding: 0 24px;
+    margin-bottom: 32px;
+  }
+
+  .timeline-track {
+    padding: 0 24px 40px;
+  }
+
+  .timeline-hint {
+    padding-left: 24px;
+  }
+
+  .tl-item {
+    flex: 0 0 270px;
+  }
+}

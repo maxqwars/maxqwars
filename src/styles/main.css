@@ -1,0 +1,23 @@
+@import './_reset.css';
+@import './_variables.css';
+@import './_fonts.css';
+@import './_cursor.css';
+@import './_layout.css';
+@import './_nav.css';
+@import './_hero.css';
+@import './_skills.css';
+@import './_github.css';
+@import './_timeline.css';
+@import './_contacts.css';
+@import './_footer.css';
+@import './_controls.css';
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h2 {
+  letter-spacing: 2%;
+}

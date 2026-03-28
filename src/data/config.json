@@ -1,0 +1,117 @@
+{
+  "common": {
+    "title": "Maksim \"maxqwars\" Maksimenko",
+    "description": "",
+    "logoFailback": "MAXQWARS"
+  },
+  "hero": {
+    "subtitle": "Developer & UI/UX Designer"
+  },
+  "social": [
+    {
+      "link": "https://github.com/maxqwars",
+      "title": "GitHub profile",
+      "icon": "github.svg"
+    },
+    {
+      "link": "https://x.com/maxqwars",
+      "title": "X.com",
+      "icon": "x.svg"
+    },
+    {
+      "link": "https://t.me/qwars2voice",
+      "title": "Telegram channel",
+      "icon": "telegram.svg"
+    }
+  ],
+  "skills": [
+    {
+      "abbr": "TS",
+      "name": "TypeScript",
+      "sub": "Fullstack",
+      "style": "background:rgba(49,120,198,0.15);color:#3178c6"
+    },
+    {
+      "abbr": "Re",
+      "name": "React",
+      "sub": "Frontend",
+      "style": "background:rgba(97,218,251,0.15);color:#61dafb"
+    },
+    {
+      "abbr": "No",
+      "name": "Node.js",
+      "sub": "Backend",
+      "style": "background:rgba(104,160,99,0.15);color:#68a063"
+    },
+    {
+      "abbr": "Do",
+      "name": "Docker",
+      "sub": "DevOps",
+      "style": "background:rgba(30,144,255,0.15);color:#1e90ff"
+    },
+    {
+      "abbr": "Git",
+      "name": "Git",
+      "sub": "Tools",
+      "style": "background:rgba(240,80,50,0.15);color:#f05032"
+    },
+    {
+      "abbr": "Lnx",
+      "name": "Linux",
+      "sub": "Platform",
+      "style": "background:rgba(240,80,50,0.15);color:#FFF05A"
+    }
+  ],
+  "experience": [
+    {
+      "yearsOfWork": "2024-2026",
+      "company": "\"MCSIP\" Foundation",
+      "role": "SMM specialist",
+      "description": "Developed the brand identity and managed the social media accounts for the youth information security department."
+    },
+    {
+      "yearsOfWork": "2025 — 2026",
+      "company": "KOD19",
+      "role": "Co-founder / Designer / Teacher",
+      "description": "Developed the visual identity for the project and taught a course on the basics of information security. This project was created with grant support."
+    },
+    {
+      "yearsOfWork": "2026 - Now",
+      "company": "AT HOME",
+      "role": "Freelance & Student",
+      "description": "I work on open-source projects and occasionally take on freelance assignments. I’m continuing to hone my skills."
+    }
+  ],
+  "contacts": [
+    {
+      "platform": "email",
+      "label": "Work email",
+      "icon": "",
+      "link": "mailto://maxqwars@gmail.com"
+    },
+    {
+      "platform": "telegram",
+      "label": "Telegram direct message",
+      "icon": "",
+      "link": "https://t.me/maxqwars"
+    }
+  ],
+  "footer": {
+    "year": "2026",
+    "copyright": "MAKSIM \"MAXQWARS\" MAKSIMENKO",
+    "links": [
+      {
+        "label": "Telegram channel [RU]",
+        "url": "https://t.me/qwars2voice"
+      },
+      {
+        "label": "GitHub profile",
+        "url": "https://github.com/maxqwars"
+      },
+      {
+        "label": "X.COM",
+        "url": "https://x.com/maxqwars"
+      }
+    ]
+  }
+}

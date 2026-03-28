@@ -1,0 +1,261 @@
+.github-section {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.github-header {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: inherit;
+}
+
+.github-header h2 {
+  font-family: var(--font-primary);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  /* letter-spacing: -0.5px; */
+  color: var(--color-text);
+}
+
+.github-header p {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-md);
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast),
+    transform var(--transition-fast);
+  min-height: 160px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.repo-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-3px);
+}
+
+.repo-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.repo-card__name {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+/* Иконка внешней ссылки */
+.repo-card__icon {
+  flex-shrink: 0;
+  opacity: 0.35;
+  transition: opacity var(--transition-fast);
+  color: var(--color-text);
+}
+
+.repo-card:hover .repo-card__icon {
+  opacity: 1;
+}
+
+.repo-card__desc {
+  font-family: var(--font-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.repo-card__desc--empty {
+  color: rgba(255, 255, 255, 0.2);
+  font-style: italic;
+}
+
+.repo-card__foot {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.repo-card__lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.repo-card__lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.repo-card__stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.repos-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+}
+
+.repos-state--error {
+  color: rgba(255, 80, 80, 0.7);
+}
+
+.repo-skeleton {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-line {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.lang-javascript {
+  background: #f1e05a;
+}
+.lang-typescript {
+  background: #3178c6;
+}
+.lang-python {
+  background: #3572a5;
+}
+.lang-rust {
+  background: #dea584;
+}
+.lang-go {
+  background: #00add8;
+}
+.lang-css {
+  background: #563d7c;
+}
+.lang-html {
+  background: #e34c26;
+}
+.lang-vue {
+  background: #41b883;
+}
+.lang-svelte {
+  background: #ff3e00;
+}
+.lang-c {
+  background: #555555;
+}
+.lang-cpp {
+  background: #f34b7d;
+}
+.lang-java {
+  background: #b07219;
+}
+.lang-kotlin {
+  background: #a97bff;
+}
+.lang-swift {
+  background: #f05138;
+}
+.lang-ruby {
+  background: #701516;
+}
+.lang-php {
+  background: #4f5d95;
+}
+.lang-shell {
+  background: #89e051;
+}
+.lang-default {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 960px) {
+  .repos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .github-section {
+    padding: 60px 24px;
+  }
+
+  .repos-grid {
+    grid-template-columns: 1fr;
+  }
+}

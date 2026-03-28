@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ common.title }}</title>
+    <meta name="description" content="{{ common.description }}" />
+  </head>
+  <body>
+    <nav class="glass-nav">
+      <div class="nav-logo">
+        <img src="logo.svg" class="white-icon" alt="{{ title }}" />
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hello" class="active">Hello 👋</a></li>
+        <li><a href="#github">Open Source</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#timeline">Work Experience</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <canvas id="bg-canvas"></canvas>
+    <main class="snap-container">
+      <section class="snap-section" id="hello">
+        <div class="hero-content">
+          <!-- <span class="highlight">&lt;maxqwars/&gt;</span><br /> -->
+          <h1 class="hero-title">
+            Maksim
+            <br />
+            Maksimenko<br />
+            <!-- <span class="highlight">human://maxqwars</span><br /> -->
+          </h1>
+          <p class="hero-subtitle">{{ hero.subtitle }}</p>
+          <div class="hero-divider"></div>
+          <div class="social-links">
+            {{#each social}}
+            <a href="{{ link }}" target="_blank">
+              <img src="./{{ icon }}" class="white-icon" alt="{{ title }}" />
+            </a>
+            {{/each}}
+          </div>
+        </div>
+      </section>
+      <section id="github" class="snap-section github-section">
+        <div class="github-header">
+          <div class="">
+            <h2>PUBLIC PROJECTS 👐</h2>
+            <p>Public projects hosted on GitHub</p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="snap-section skills-section">
+        <div class="skills-header">
+          <div>
+            <h2>SKILLS</h2>
+            <p>Technologies & tools</p>
+          </div>
+        </div>
+        <div class="skills-body">
+          <div>
+            <p class="skills-group-label">Technologies</p>
+            <div class="skills-grid">
+              <!-- Skill card item template -->
+              <!-- <div class="skill-abbr" style="background:rgba(49,120,198,0.15);color:#3178c6">TS</div>
+                <div class="skill-info">
+                  <span class="skill-name">TypeScript</span>
+                  <span class="skill-sub">Frontend</span>
+                </div>
+              </div> -->
+              {{#each skills}}
+              <div class="skill-card">
+                <div class="skill-abbr" style="{{ style }}">{{ abbr }}</div>
+                <div class="skill-info">
+                  <span class="skill-name">{{ name }}</span>
+                  <span class="skill-sub">{{ sub }}</span>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+          <div>
+            <p class="skills-group-label">Language</p>
+            <div class="langs-grid">
+              <div class="lang-card">
+                <div class="lang-flag">🇷🇺</div>
+                <div class="lang-info">
+                  <span class="lang-name">Russian</span>
+                  <span class="lang-level">Native</span>
+                </div>
+              </div>
+              <div class="lang-card">
+                <div class="lang-flag">🇺🇸</div>
+                <div class="lang-info">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level">Technical</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="timeline" class="snap-section timeline-section">
+        <div class="timeline-header">
+          <div class="">
+            <h2>WORK EXPERIENCE 🧢</h2>
+            <p>Timeline</p>
+          </div>
+        </div>
+        <div class="timeline-track-wrap">
+          <div class="timeline-track">
+            <div class="tl-line" aria-hidden="true"></div>
+
+            <!-- Timeline item template -->
+            <!-- <article class="tl-item">
+              <time class="tl-date" datetime="2024">2024 — 2026</time>
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-card">
+                <h3 class="tl-company">"MCSIP" Foundation</h3>
+                <p class="tl-role">SMM specialist</p>
+                <div class="tl-divider" aria-hidden="true"></div>
+                <p class="tl-desc">
+                  Developed the brand identity and managed the social media
+                  accounts for the youth information security department.
+                </p>
+              </div>
+            </article> -->
+
+            {{#each experience}}
+            <article class="tl-item">
+              <time class="tl-date" datetime="2024">{{ yearsOfWork }}</time>
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-card">
+                <h3 class="tl-company">{{ company }}</h3>
+                <p class="tl-role">{{ role }}</p>
+                <div class="tl-divider" aria-hidden="true"></div>
+                <p class="tl-desc">{{ description }}</p>
+              </div>
+            </article>
+            {{/each}}
+          </div>
+        </div>
+        <p class="timeline-hint" aria-hidden="true">Scroll here to go to the next section</p>
+      </section>
+      <section class="snap-section" id="contacts">
+        <div class="contacts-body">
+          <div class="contacts-header">
+            <div>
+              <h2>Contacts</h2>
+              <p>Contact us for inquiries or collaboration.</p>
+            </div>
+          </div>
+
+          <div class="contacts-list">
+            <!-- Telegram -->
+            <a class="contact-link" href="https://t.me/maxqwars" target="_blank" rel="noopener noreferrer">
+              <div class="contact-icon contact-icon--tg">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.19 13.6l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.958.96z"
+                  />
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Telegram direct</span>
+                <span class="contact-value">@maxqwars</span>
+              </div>
+              <svg
+                class="contact-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+
+            <!-- Email -->
+            <a class="contact-link" href="mailto:maxqwars@gmail.com">
+              <div class="contact-icon contact-icon--mail">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">maxqwars@gmail.com</span>
+              </div>
+              <svg
+                class="contact-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <div class="footer-inner">
+            <p class="footer-copy">
+              <time datetime="{{ footer.year }}">{{ footer.year }}</time> —
+              <span>{{ footer.copyright }}</span>
+            </p>
+            <ul class="footer-links">
+              <li class="footer-divider" aria-hidden="true"></li>
+              {{#each footer.links}}
+              <li>
+                <a href="{{ url }}" target="_blank" rel="noopener">{{ label }}</a>
+              </li>
+              <li class="footer-divider" aria-hidden="true"></li>
+              {{/each}}
+            </ul>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

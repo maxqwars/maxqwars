@@ -1,0 +1,33 @@
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Manrope', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+  --color-accent: #15ff00;
+  /* --color-accent: #3590F3; */
+  /* --color-accent: #E5ECE9; */
+  /* --color-accent: #CBFF8C; */
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(12px);
+
+  --radius-sm: 5px;
+  --radius-md: 15px;
+  --radius-pill: 24px;
+
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --z-canvas: 0;
+  --z-content: 1;
+  --z-nav: 1000;
+  --z-overlay: 1001;
+}

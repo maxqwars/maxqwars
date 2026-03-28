@@ -1,0 +1,51 @@
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-canvas);
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  #bg-canvas {
+    opacity: 0.5;
+  }
+}
+
+.snap-container {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow-y: auto;
+  outline: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+.snap-section {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snap-section:last-of-type {
+  flex-direction: column;
+}
+
+.content {
+  z-index: var(--z-content);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90dvh;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  overflow-y: auto;
+}
